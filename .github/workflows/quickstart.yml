@@ -1,0 +1,13 @@
+name: rust-build
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: icepuma/rust-action@d4a328ec4dc8af557036a8181640b276cd25a6bb
+        with:
+          args: cargo fmt -- --check && cargo clippy -- -Dwarnings && cargo test

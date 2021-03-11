@@ -1,5 +1,6 @@
 # link-me
 ![GitHub](https://img.shields.io/github/license/ashfordneil/link-me?branch=main)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/ashfordneil/link-me/rust-build/main)
 
 A small CLI utility to generate links to a piece of code on your computer. You
 give it a file name, and it'll give you a github URL to that file on your
@@ -30,6 +31,5 @@ ARGS:
 And here's an example:
 
 ```shell
-$ link-me README.md --ref-type branch --line-number 34
-https://github.com/ashfordneil/link-me/blob/main/README.md#L34
-```
+$ link-me README.md --ref-type branch --line-number 35
+https://github.com/ashfordneil/link-me/blob/main/README.md#L35
